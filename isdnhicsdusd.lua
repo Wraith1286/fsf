@@ -2616,6 +2616,7 @@ local function PunchPlayer(targetPlayer, lh, rh, me)
 	local vChar = targetPlayer.Character
 	if not vChar then return end
 
+    local humanoid = vChar:FindFirstChild("Humanoid")
 	local tHead = vChar:FindFirstChild("Head")
 	local leftHand = vChar:FindFirstChild("LeftHand")
 	local rightHand = vChar:FindFirstChild("RightHand")
