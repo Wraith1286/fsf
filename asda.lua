@@ -2649,7 +2649,7 @@ steppedEvent = game:GetService("RunService").Stepped:Connect(function()
 	if imgui then
 		local character = game.Players.LocalPlayer.Character
 		if character and character:FindFirstChild("Humanoid") and character:FindFirstChild("Humanoid").Health > 0 then
-			if tick() - st2 >= FLAGS.FastKill and 0.06 or 1.5 then
+			if tick() - st2 >= (FLAGS.FastKill and 0.06 or 1.5) then
 				local me = game.Players.LocalPlayer:FindFirstChild("muscleEvent")
 				st2 = tick()
 
